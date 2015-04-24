@@ -1,0 +1,131 @@
+static CHUNK chunks[] = {
+
+	/* Consonants */
+	
+	// /b/
+	{PhonemeB, GraphemeB, "b"}, /* 'b' as in banana */
+	{PhonemeB, GraphemeBB, "bb"}, /* 'bb' as in bubbles */
+	
+	// /k/
+	{PhonemeK, GraphemeK, "k"}, /* 'k' as in kite */
+	{PhonemeK, GraphemeC, "c"}, /* 'c' as in car */
+	{PhonemeK, GraphemeCK, "ck"}, /* 'ck' as in duck */
+	{PhonemeK, GraphemeQ, "q"}, /* 'q' as in ? */
+	{PhonemeK, GraphemeC, "ch"}, /* 'c' as in ? */
+	
+	// /d/
+	{PhonemeK, GraphemeD, "d"}, /* 'd' as in dinosaur */
+	{PhonemeK, GraphemeC, "dd"}, /* 'dd' as in puddle */
+	
+	// /f/
+	{PhonemeK, GraphemeF, "f"}, /* 'f' as in fish */
+	{PhonemeK, GraphemeFF, "ff"}, /* 'ff' as in giraffe */
+	{PhonemeK, GraphemePH, "ph"}, /* 'ph' as in pharmacy */
+	{PhonemeK, GraphemeGH, "gh"}, /* 'gh' as in ? */
+	
+	// /h/
+	{PhonemeK, GraphemeH, "h"}, /* 'h' as in helicopter */
+	
+	// /j/
+	{PhonemeK, GraphemeJ, "j"}, /* 'j' as in jellyfish */
+	{PhonemeK, GraphemeG, "g"}, /* 'g' as in giant */
+	{PhonemeK, GraphemeDGE, "dge"}, /* 'dge' as in fridge */
+	{PhonemeK, GraphemeGE, "ge"}, /* 'ge' as in budge */
+	
+	// /li/
+	{PhonemeK, GraphemeL, "l"}, /* 'l' as in leaf */
+	{PhonemeK, GraphemeLL, "ll"}, /* 'll' as in bell */
+	
+	// /m/
+	{PhonemeK, GraphemeM, "m"}, /* 'm' as in monkey */
+	{PhonemeK, GraphemeMM, "mm"}, /* 'mm' as in hammer */
+	{PhonemeK, GraphemeMB, "mb"}, /* 'mb' as in ? */
+	
+	// /n/
+	{PhonemeK, GraphemeN, "n"}, /* 'n' as in nail */
+	{PhonemeK, GraphemeKN, "kn"}, /* 'kn' as in knot */
+	
+	// /p/
+	{PhonemeK, GraphemeP, "p"}, /* 'p' as in pumpkin */
+	{PhonemeK, GraphemePP, "pp"}, /* 'pp' as in puppets */
+	
+	// /r/
+	{PhonemeK, GraphemeR, "r"}, /* 'r' as in rain */
+	{PhonemeK, GraphemeRR, "rr"}, /* 'rr' as in ? */
+	{PhonemeK, GraphemeWR, "wr"}, /* 'wr' as in write */
+	
+	// /s/
+	{PhonemeK, GraphemeS, "s"}, /* 's' as in sun */
+	{PhonemeK, GraphemeSS, "ss"}, /* 'ss' as in hiss */
+	{PhonemeK, GraphemeCE, "ce"}, /* 'ce' as in rice */
+	{PhonemeK, GraphemeSE, "se"}, /* 'se' as in mouse */
+	{PhonemeK, GraphemeC, "c"}, /* 'c' as in ? */
+	{PhonemeK, GraphemeSC, "sc"}, /* 'sc' as in ? */
+	
+	// /t/
+	{PhonemeK, GraphemeT, "t"}, /* 't' as in turtle */
+	{PhonemeK, GraphemeTT, "tt"}, /* 'tt' as in little */
+	
+	// /v/
+	{PhonemeK, GraphemeV, "v"}, /* 'v' as in volcano */
+	{PhonemeK, GraphemeVE, "ve"}, /* 've' as in halve */
+	
+	// /w/
+	{PhonemeK, GraphemeW, "w"}, /* 'w' as in watch */
+	{PhonemeK, GraphemeWH, "wh"}, /* 'wh' as in what */
+	{PhonemeK, GraphemeU, "u"}, /* 'u' as in queen */
+	
+	// /x/
+	{PhonemeK, GraphemeX, "x"}, /* 'x' as in fox */
+	
+	// /y/
+	{PhonemeK, GraphemeY, "y"}, /* 'y' as in yo-yo */
+	
+	// /z/
+	{PhonemeK, GraphemeZ, "z"}, /* 'z' as in zip */
+	{PhonemeK, GraphemeZZ, "zz"}, /* 'zz' as in buzz */
+	{PhonemeK, GraphemeZE, "ze"}, /* 'ze' as in daze */
+	{PhonemeK, GraphemeS, "s"}, /* 's' as in ? */
+	{PhonemeK, GraphemeSE, "se"}, /* 'se' as in please */
+	
+	// /sh/
+	{PhonemeK, GraphemeSH, "sh"}, /* 'sh' as in shoes */
+	{PhonemeK, GraphemeCH, "ch"}, /* 'dd' as in choose */
+	{PhonemeK, GraphemeSI, "si"}, /* 'si' as in television */
+	{PhonemeK, GraphemeC, "ti"}, /* 'dd' as in ? */
+	
+	// /ch/
+	{PhonemeK, GraphemeCH, "ch"}, /* 'ch' as in children */
+	{PhonemeK, GraphemeTCH, "tch"}, /* 'tch' as in stitch */
+	
+	// /th/
+	{PhonemeK, GraphemeTH, "th"}, /* 'th' as in mother */
+	
+	// /th/
+	{PhonemeK, GraphemeTH, "th"}, /* 'th' as in the */
+	
+	// /ng/
+	{PhonemeK, GraphemeNG, "ng"}, /* 'ng' as in sing */
+	{PhonemeK, GraphemeN, "n"}, /* 'n' as in ankle */
+
+	/* Vowels */
+	
+	/* /a/ Short A sound */
+	{PhonemeShortA, GraphemeA, "a"}, /* 'a' in apple */
+	
+	/* /e/ Short E sound */
+	{PhonemeShortE, GraphemeE, "e"}, /* 'e' in elephant */ 
+	/*{PhonemeShortE, GraphemeEA, "ea"}, * 'ea' in bread */
+	
+	/* /i/ Short I sound */
+	{PhonemeShortI, GraphemeI, "i"}, /* 'i' in igloo */
+	/*{PhonemeShortI, GraphemeY, "y"}, * 'y' in gym */
+	
+	/* /o/ Short O sound */
+	{PhonemeShortO, GraphemeO, "o"}, /* 'o' in octopus */
+	/*{PhonemeShortO, GraphemeA, "a"}, * 'a' in wash */
+	
+	/* /u/ Short U sound */
+	{PhonemeShortU, GraphemeU, "u"} /* 'u' in umbrella */
+	/*{PhonemeShortU, GraphemeO, "o"} * 'o' in won */
+};

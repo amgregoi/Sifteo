@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head>
+	<title>Phenome Generation</title>
+	<script type="text/javascript" src="./chunks.js"></script>
+  </head>
+  <body>
+	<canvas id="myCanvas" width="128" height="128" style="border: 1px solid black">
+	</canvas>
+	<div id="images">
+	</div>
+	<script type="text/javascript">
+		var canvas = document.getElementById("myCanvas"),
+			ctx = canvas.getContext("2d"),
+			images = document.getElementById("images"),
+			text,
+			width, 
+			image;
+			
+		ctx.font = "100pt KG Primary Penmanship";
+		
+		chunks.forEach( function(text) {
+			width = ctx.measureText(text).width;
+			while (width < 128) {
+				text = " " + text + " ";
+				width = ctx.measureText(text).width;
+			}
+			ctx.clearRect(0,0,128, 128);
+			ctx.fillStyle = 'rgba(1, 1, 1, 1)';
+			ctx.fillText(text, (128 - width)/2, 100);
+			
+			image = document.createElement("img");
+			image.src = canvas.toDataURL();
+			images.appendChild(image);
+		});
+		
+	</script>
+  
+</body></html>
